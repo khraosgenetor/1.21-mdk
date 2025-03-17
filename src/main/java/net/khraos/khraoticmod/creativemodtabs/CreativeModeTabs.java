@@ -1,8 +1,8 @@
 package net.khraos.khraoticmod.creativemodtabs;
 
 import net.khraos.khraoticmod.KhraoticMod;
-import net.khraos.khraoticmod.visentium.VisentiumItems;
-import net.khraos.khraoticmod.visentium.VisentiumBlocks;
+import net.khraos.khraoticmod.dark_iron.DarkIronBlocks;
+import net.khraos.khraoticmod.dark_iron.DarkIronItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,13 +19,13 @@ public class CreativeModeTabs {
 
     public static final RegistryObject<CreativeModeTab> KHRAOTIC_TAB = TABS.register(
             "khraotic_tab", () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 0)
-                    .icon(() -> new ItemStack(VisentiumItems.VISENTIUM_GEM.get())) // Static icon
+                    .icon(() -> new ItemStack(DarkIronItems.DARK_IRON.get())) // Static icon
                     .title(Component.translatable("visentium.khraotic_tabs"))
                     .displayItems((pParameters, pOutput) -> {
-                        for (RegistryObject<Item> item : VisentiumItems.VISENTIUM_ITEM_REG.getEntries()) {
+                        for (RegistryObject<Item> item : DarkIronItems.DARK_IRON_ITEM_REG.getEntries()) {
                             pOutput.accept(item.get());
                         }
-                        for (RegistryObject<Block> block : VisentiumBlocks.VISENTIUM_BLOCK_REG.getEntries()) {
+                        for (RegistryObject<Block> block : DarkIronBlocks.DARK_IRON_BLOCK_REG.getEntries()) {
                             pOutput.accept(block.get());
                         }
                     })

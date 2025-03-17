@@ -2,7 +2,7 @@
     public static final DeferredRegister<Item> ITEMS =
 import net.khraos.khraoticmod.item.ModItems;
         ModItems.ITEMS.register(modEventBus);
-import net.khraos.khraoticmod.visentium.VisentiumBlocks;
+import net.khraos.khraoticmod.dark_iron.DarkIronBlocks;
         VisentiumBlocks.VISENTIUM_BLOCK_REG.register(modEventBus);
 import net.minecraftforge.registries.DeferredRegister;
     public static final DeferredRegister<Block> VISENTIUM_BLOCK_REG =

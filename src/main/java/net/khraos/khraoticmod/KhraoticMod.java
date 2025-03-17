@@ -3,9 +3,8 @@ package net.khraos.khraoticmod;
 import com.mojang.logging.LogUtils;
 import net.khraos.khraoticmod.block.ModBlocks;
 import net.khraos.khraoticmod.creativemodtabs.CreativeModeTabs;
+import net.khraos.khraoticmod.dark_iron.DarkIronItems;
 import net.khraos.khraoticmod.item.ModItems;
-import net.khraos.khraoticmod.visentium.VisentiumBlocks;
-import net.khraos.khraoticmod.visentium.VisentiumItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -34,7 +33,7 @@ public class KhraoticMod {
 
         MinecraftForge.EVENT_BUS.register(this);
 
-        VisentiumItems.VISENTIUM_ITEM_REG.register(modEventBus);
+        DarkIronItems.DARK_IRON_ITEM_REG.register(modEventBus);
 
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.register(modEventBus);

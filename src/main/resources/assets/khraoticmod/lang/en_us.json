@@ -1,9 +1,6 @@
 {
-  "item.khraoticmod.visentium": "Visentium",
-  "item.khraoticmod.raw_visentium": "Raw Visentium",
+  "item.khraoticmod.dark_iron": "Dark Iron",
+  "item.khraoticmod.raw_dark_iron": "Raw Dark Iron",
 
-  "item.khraoticmod.bisentium": "Bisentium",
-  "item.khraoticmod.raw_bisentium": "Raw Bisentium",
-
-  "block.khraoticmod.block_of_visentium": "Block of Visentium"
+  "block.khraoticmod.block_of_dark_iron": "Block of Dark Iron"
 }

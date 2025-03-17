@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "khraoticmod:raw_visentium"
+    "item": "khraoticmod:raw_dark_iron"
   },
-  "result": "khraoticmod:visentium",
+  "result": "khraoticmod:dark_iron",
   "experience": 0.7,
   "cookingtime": 200
 }

@@ -1,8 +1,7 @@
-package net.khraos.khraoticmod.visentium;
+package net.khraos.khraoticmod.dark_iron;
 
 import net.khraos.khraoticmod.KhraoticMod;
-import net.khraos.khraoticmod.item.ModItems; // Import ModItems
-import net.minecraft.world.item.BlockItem;
+import net.khraos.khraoticmod.block.ModBlocks;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -12,12 +11,17 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class VisentiumBlocks {
-    public static final DeferredRegister<Block> VISENTIUM_BLOCK_REG =
+public class DarkIronBlocks {
+    public static final DeferredRegister<Block> DARK_IRON_BLOCK_REG =
             DeferredRegister.create(ForgeRegistries.BLOCKS, KhraoticMod.MOD_ID);
 
-    public static final RegistryObject<Block> BLOCK_OF_VISENTIUM = VISENTIUM_BLOCK_REG.register(
-            "block_of_visentium",
+    public static final DeferredRegister<Item> DARK_IRON_BLOCK_ITEM_REG =
+            DeferredRegister.create(ForgeRegistries.ITEMS, KhraoticMod.MOD_ID);
+
+    public static final RegistryObject<Block> BLOCK_OF_DARK_IRON = ModBlocks.registerBlock(
+            DARK_IRON_BLOCK_REG,
+            DARK_IRON_BLOCK_ITEM_REG,
+            "block_of_dark_iron",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .requiresCorrectToolForDrops()
@@ -25,6 +29,7 @@ public class VisentiumBlocks {
     );
 
     public static void register(IEventBus eventBus) {
-        VISENTIUM_BLOCK_REG.register(eventBus);
+        DARK_IRON_BLOCK_REG.register(eventBus);
+
     }
 }
