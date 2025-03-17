@@ -22,11 +22,13 @@ public class CreativeModeTabs {
                     .icon(() -> new ItemStack(DarkIronItems.DARK_IRON.get())) // Static icon
                     .title(Component.translatable("visentium.khraotic_tabs"))
                     .displayItems((pParameters, pOutput) -> {
+                        // Add items with stack size 1
                         for (RegistryObject<Item> item : DarkIronItems.DARK_IRON_ITEM_REG.getEntries()) {
-                            pOutput.accept(item.get());
+                            pOutput.accept(new ItemStack(item.get(), 1));
                         }
+                        // Add blocks as items
                         for (RegistryObject<Block> block : DarkIronBlocks.DARK_IRON_BLOCK_REG.getEntries()) {
-                            pOutput.accept(block.get());
+                            pOutput.accept(new ItemStack(block.get().asItem(), 1));
                         }
                     })
                     .build()
