@@ -1,4 +1,4 @@
-package net.khraos.khraotic_mod;
+package net.khraos.khraoticmod;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "khraoticmod:raw_visentium"
+  },
+  "result": "khraoticmod:visentium",
+  "experience": 0.7,
+  "cookingtime": 200
+}

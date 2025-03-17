@@ -1,0 +1,15 @@
+[17Mar2025 17:30:18.605] [modloading-worker-0/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block: Override did not have an associated owner object. Name: khraoticmod:block_of_visentium Value: Block{khraoticmod:block_of_visentium}
+    public static final DeferredRegister<Item> ITEMS =
+import net.khraos.khraoticmod.item.ModItems;
+        ModItems.ITEMS.register(modEventBus);
+import net.khraos.khraoticmod.visentium.VisentiumBlocks;
+        VisentiumBlocks.VISENTIUM_BLOCK_REG.register(modEventBus);
+import net.minecraftforge.registries.DeferredRegister;
+    public static final DeferredRegister<Block> VISENTIUM_BLOCK_REG =
+            DeferredRegister.create(ForgeRegistries.BLOCKS, KhraoticMod.MOD_ID);
+    public static final RegistryObject<Block> BLOCK_OF_VISENTIUM = VISENTIUM_BLOCK_REG.register(
+    // Register Block Items Here
+    public static final RegistryObject<Item> BLOCK_OF_VISENTIUM_ITEM = ModItems.ITEMS.register(
+    public static void register(IEventBus eventBus) {
+        VISENTIUM_BLOCK_REG.register(eventBus);
+        ModItems.ITEMS.register(eventBus); // ✅ FIXED
