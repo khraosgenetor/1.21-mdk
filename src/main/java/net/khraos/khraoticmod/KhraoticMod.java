@@ -35,7 +35,6 @@ public class KhraoticMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         VisentiumItems.VISENTIUM_ITEM_REG.register(modEventBus);
-        VisentiumBlocks.VISENTIUM_BLOCK_REG.register(modEventBus);
 
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.register(modEventBus);
