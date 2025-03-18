@@ -18,17 +18,20 @@ public class CreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, KhraoticMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> KHRAOTIC_TAB = TABS.register(
-            "khraotic_tab", () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 0)
+            "dark_iron_tab",
+            () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 0)
                     .icon(() -> new ItemStack(DarkIronItems.DARK_IRON.get())) // Static icon
-                    .title(Component.translatable("visentium.khraotic_tabs"))
+                    .title(Component.translatable("dark_iron.modded_tabs"))
                     .displayItems((pParameters, pOutput) -> {
-                        // Add items with stack size 1
                         for (RegistryObject<Item> item : DarkIronItems.DARK_IRON_ITEM_REG.getEntries()) {
-                            pOutput.accept(new ItemStack(item.get(), 1));
+                            ItemStack stack = new ItemStack(item.get(), 1);
+                            System.out.println("Item: " + item.getId() + ", Stack Size: " + stack.getCount()); // Logging
+                            pOutput.accept(stack);
                         }
-                        // Add blocks as items
                         for (RegistryObject<Block> block : DarkIronBlocks.DARK_IRON_BLOCK_REG.getEntries()) {
-                            pOutput.accept(new ItemStack(block.get().asItem(), 1));
+                            ItemStack stack = new ItemStack(block.get(), 1);
+                            System.out.println("Block: " + block.getId() + ", Stack Size: " + stack.getCount()); // Logging
+                            pOutput.accept(stack);
                         }
                     })
                     .build()

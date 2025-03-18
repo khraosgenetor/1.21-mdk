@@ -30,6 +30,6 @@ public class DarkIronBlocks {
 
     public static void register(IEventBus eventBus) {
         DARK_IRON_BLOCK_REG.register(eventBus);
-
+        DARK_IRON_BLOCK_ITEM_REG.register(eventBus);
     }
 }

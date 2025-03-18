@@ -2,5 +2,6 @@
   "item.khraoticmod.dark_iron": "Dark Iron",
   "item.khraoticmod.raw_dark_iron": "Raw Dark Iron",
 
-  "block.khraoticmod.block_of_dark_iron": "Block of Dark Iron"
+  "block.khraoticmod.block_of_dark_iron": "Block of Dark Iron",
+  "dark_iron.modded_tabs": "Dark Iron"
 }
