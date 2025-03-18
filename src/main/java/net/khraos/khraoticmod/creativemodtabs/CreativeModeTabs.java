@@ -20,7 +20,7 @@ public class CreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> KHRAOTIC_TAB = TABS.register(
             "dark_iron_tab",
             () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 0)
-                    .icon(() -> new ItemStack(DarkIronItems.DARK_IRON.get())) // Static icon
+                    .icon(() -> new ItemStack(DarkIronItems.DARK_IRON_INGOT.get())) // Static icon
                     .title(Component.translatable("dark_iron.modded_tabs"))
                     .displayItems((pParameters, pOutput) -> {
                         for (RegistryObject<Item> item : DarkIronItems.DARK_IRON_ITEM_REG.getEntries()) {

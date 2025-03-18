@@ -10,9 +10,9 @@ public class DarkIronItems {
     public static final DeferredRegister<Item> DARK_IRON_ITEM_REG =
             DeferredRegister.create(ForgeRegistries.ITEMS, KhraoticMod.MOD_ID);
 
-    public static final RegistryObject<Item> DARK_IRON = DARK_IRON_ITEM_REG.register("dark_iron",
+    public static final RegistryObject<Item> DARK_IRON_INGOT = DARK_IRON_ITEM_REG.register("dark_iron_ingot",
             () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> RAW_DARK_IRON = DARK_IRON_ITEM_REG.register("raw_dark_iron",
+    public static final RegistryObject<Item> RAW_DARK_IRON = DARK_IRON_ITEM_REG.register("raw_dark_iron_ingot",
             () -> new Item(new Item.Properties()));
 }

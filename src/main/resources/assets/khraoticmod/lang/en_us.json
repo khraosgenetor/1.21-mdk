@@ -1,6 +1,6 @@
 {
-  "item.khraoticmod.dark_iron": "Dark Iron",
-  "item.khraoticmod.raw_dark_iron": "Raw Dark Iron",
+  "item.khraoticmod.dark_iron_ingot": "Dark Iron",
+  "item.khraoticmod.raw_dark_iron_ingot": "Raw Dark Iron",
 
   "block.khraoticmod.block_of_dark_iron": "Block of Dark Iron",
   "dark_iron.modded_tabs": "Dark Iron"
